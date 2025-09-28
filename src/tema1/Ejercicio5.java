@@ -2,7 +2,7 @@ package tema1;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
+import java.util.Locale;
 
 public class Ejercicio5 {
 
