@@ -23,6 +23,7 @@ public class Ejercicio3 {
 			birthYear = reader.nextInt();
 			
 			System.out.print("Edad:" + (currentYear - birthYear));
+			
 			reader.close();
 			
 	}

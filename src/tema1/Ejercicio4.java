@@ -1,6 +1,7 @@
 package tema1;
 
 import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Ejercicio4 {
@@ -26,6 +27,8 @@ public class Ejercicio4 {
 		notaFinal = (nota1 + nota2) / 2;
 		
 		System.out.print("Nota media:" + notaFinal);
+		
+		reader.close();
 		
 	}
 
