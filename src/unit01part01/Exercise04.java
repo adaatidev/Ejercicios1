@@ -1,10 +1,10 @@
-package unit001part001;
+package unit01part01;
 
 import java.util.Locale;
 
 import java.util.Scanner;
 
-public class Ejercicio4 {
+public class Exercise04 {
 
 	public static void main(String[] args) {
 
