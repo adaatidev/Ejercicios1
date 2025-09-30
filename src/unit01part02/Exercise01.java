@@ -8,7 +8,6 @@ public class Exercise01 {
 		
 		//Set the variable.
 		double number;
-		int entero;
 		
 		//Create the scanner.
 		Scanner reader = new Scanner(System.in);
@@ -17,14 +16,13 @@ public class Exercise01 {
 		System.out.print("Ingrese un número decimal: ");
 		number = reader.nextDouble();
 		
-		entero = number + 0.5;
+		number = (int)(number + 0.5);
 		
-		System.out.println("Número redondeado: " + entero);
+		System.out.println("Número redondeado: " + number);
 		
 		//Close the scanner.
 		reader.close();
 		
-
 	}
 
 }
