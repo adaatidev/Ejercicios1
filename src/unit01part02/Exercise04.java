@@ -9,22 +9,25 @@ public class Exercise04 {
 		int a;
 		int b;
 		int c;
-		string ecu;
+		int x;
 		
 		//Set up the scanner.
 		Scanner reader = new Scanner(System.in);
 		
 		//Ask the questions.
-		System.out.println("Ingrese valor para a: ");
+		System.out.print("Ingrese valor para a: ");
 		a = reader.nextInt();
 		
-		System.out.println("Ingrese valor para b: ");
+		System.out.print("Ingrese valor para b: ");
 		b = reader.nextInt();
 		
-		System.out.println("Ingrese valor para c: ");
+		System.out.print("Ingrese valor para c: ");
 		c = reader.nextInt();
 		
-		ecu = y= a * x2+ b * x+ c ;
+		System.out.print("Ingrese valor para x: ");
+		x = reader.nextInt();
+		
+		System.out.println("Polinomio de segundo grado: y= " + a + ("*") + x + ("^2+") + b + ("*") + x + ("+") + c);
 		
 		reader.close();
 	}
