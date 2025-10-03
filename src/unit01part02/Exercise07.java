@@ -13,24 +13,34 @@ public class Exercise07 {
 		final double PRE_ADU = 20;
 		double total;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("Ingrese número de entradas infantiles: ");
-		entInf = reader.nextInt();
+			//Write down the question.
+			System.out.print("Ingrese número de entradas infantiles: ");
 		
-		System.out.print("Ingrese número de entradas para adultos: ");
-		entAdu = reader.nextInt();
+			//The scanner reads the user's answer.
+			entInf = reader.nextInt();
 		
-		entInf *= PRE_INF;
-		entAdu *= PRE_ADU;
+			//Write down the question.
+			System.out.print("Ingrese número de entradas para adultos: ");
 		
-		total = entInf + entAdu;
+			//The scanner reads the user's answer.
+			entAdu = reader.nextInt();
 		
-		total = total > 100 ? total - total * 5 / 100 : total;
+			//Calculate the variable.
+			entInf *= PRE_INF;
+			entAdu *= PRE_ADU;
+			total = entInf + entAdu;
 		
-		System.out.print("Precio a pagar: " + total + "€");
+			//Conditional.
+			total = total > 100 ? total - total * 5 / 100 : total;
 		
-		reader.close();
+			//Show the answer.
+			System.out.print("Precio a pagar: " + total + "€");
+		
+			//Turn off/Close the scanner.
+			reader.close();
 
 	}
 

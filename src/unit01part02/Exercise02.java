@@ -10,18 +10,23 @@ public class Exercise02 {
 		int number;
 		int suma;
 		
-		//Set up the scanner.
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		//Ask the question.
-		System.out.println("Ingrese un número: ");
-		number = reader.nextInt();
+			//Write down the question.
+			System.out.println("Ingrese un número: ");
+			
+			//The scanner reads the user's answer.
+			number = reader.nextInt();
 		
-		suma = number % 7 == 0 ? 0 : 7 - number % 7;
+			//Calculate the variable.
+			suma = number % 7 == 0 ? 0 : 7 - number % 7;
+			
+			//Show the answer.
+			System.out.println("Número a sumar para que sea múltiplo de 7: " + suma);
 		
-		System.out.println("Número a sumar para que sea múltiplo de 7: " + suma);
-		
-		reader.close();
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

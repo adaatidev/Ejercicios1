@@ -6,29 +6,43 @@ public class Exercise06 {
 
 	public static void main(String[] args) {
 		
+		//Set the variables.
 		int mm;
 		int cm;
 		int m;
 		double total;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.println("Ingrese medida en milímetros: ");
-		mm = reader.nextInt();
-		System.out.println("Ingrese medida en centímetros: ");
-		cm = reader.nextInt();
-		System.out.println("Ingrese medida en metros: ");
-		m = reader.nextInt();
+			//Write down the question.
+			System.out.println("Ingrese medida en milímetros: ");
 		
-		mm /= 10;
+			//The scanner reads the user's answer.
+			mm = reader.nextInt();
 		
-		m = m * 100;
+			//Write down the question.
+			System.out.println("Ingrese medida en centímetros: ");
 		
-		total = m + cm + mm;
+			//The scanner reads the user's answer.
+			cm = reader.nextInt();
 		
-		System.out.println("Medida pasada a cm: " + total);
+			//Write down the question.
+			System.out.println("Ingrese medida en metros: ");
 		
-		reader.close();
+			//The scanner reads the user's answer.
+			m = reader.nextInt();
+		
+			//Calculate the variable.
+			mm /= 10;
+			m = m * 100;
+			total = m + cm + mm;
+		
+			//Show the answer.
+			System.out.println("Medida pasada a cm: " + total);
+		
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

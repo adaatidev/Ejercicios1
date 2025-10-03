@@ -11,21 +11,26 @@ public class Exercise05 {
 		int min;
 		int hour;
 		
-		//Set up the scanner.
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
+			//Write down the question.
+			System.out.print("Ingrese segundos: ");
 		
-		System.out.print("Ingrese segundos: ");
-		sec = reader.nextInt();
+			//The scanner reads the user's answer.
+			sec = reader.nextInt();
 		
-		min = sec / 60;
-		hour = min / 60;
+			//Calculate the variables.
+			min = sec / 60;
+			hour = min / 60;
 		
-		System.out.println("Número de horas: " + hour);
-		System.out.println("Número de minutos: " + min);
-		System.out.println("Número de segundos: " + sec);
+			//Show the answer.
+			System.out.println("Número de horas: " + hour);
+			System.out.println("Número de minutos: " + min);
+			System.out.println("Número de segundos: " + sec);
 		
-		reader.close();
+			//Turn off/Close the scanner.
+			reader.close();
 
 	}
 

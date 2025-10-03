@@ -9,19 +9,23 @@ public class Exercise01 {
 		//Set the variable.
 		double number;
 		
-		//Create the scanner.
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		//Write down the question.
-		System.out.print("Ingrese un número decimal: ");
-		number = reader.nextDouble();
+			//Write down the question.
+			System.out.print("Ingrese un número decimal: ");
+			
+			//The scanner reads the user's answer.
+			number = reader.nextDouble();
 		
-		number = (int)(number + 0.5);
+			//Calculate the variable.
+			number = (int)(number + 0.5);
+			
+			//Show the answer.
+			System.out.println("Número redondeado: " + number);
 		
-		System.out.println("Número redondeado: " + number);
-		
-		//Close the scanner.
-		reader.close();
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

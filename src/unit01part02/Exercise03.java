@@ -11,23 +11,29 @@ public class Exercise03 {
 		int num2;
 		int mult;
 		
-		//Set up the scanner.
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		//Ask the questions.
-		System.out.println("Ingrese un primer número: ");
-		num1 = reader.nextInt();
+			//Write down the question.
+			System.out.println("Ingrese un primer número: ");
 		
-		System.out.println("Ingrese un segundo número: ");
-		num2 = reader.nextInt();
+			//The scanner reads the user's answer.
+			num1 = reader.nextInt();
 		
-		//Set the 
-		mult = num1 % num2 == 0 ? 0 : num2 - num1 % num2;
+			//Write down the question.
+			System.out.println("Ingrese un segundo número: ");
 		
-		//
-		System.out.println("Número a sumar para que sea múltiplo: " + mult);
+			//The scanner reads the user's answer.
+			num2 = reader.nextInt();
 		
-		reader.close();
+			//Calculate the variable.
+			mult = num1 % num2 == 0 ? 0 : num2 - num1 % num2;
+		
+			//Show the answer.
+			System.out.println("Número a sumar para que sea múltiplo: " + mult);
+		
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

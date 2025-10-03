@@ -6,21 +6,28 @@ public class Exercise08 {
 
 	public static void main(String[] args) {
 		
+		//Set the variables.
 		double m;
 		double cm;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("Ingrese longitud en metros: ");
-		m = reader.nextDouble();
+			//Write down the question.
+			System.out.print("Ingrese longitud en metros: ");
 		
-		cm= m*100;
+			//The scanner reads the user's answer.
+			m = reader.nextDouble();
 		
-		cm = (int) cm;
+			//Calculate the variable.
+			cm= m*100;
+			cm = (int) cm;
 		
-		System.out.print("Longitud en centímetros: " + cm);
+			//Show the answer.
+			System.out.print("Longitud en centímetros: " + cm);
 		
-		reader.close();
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

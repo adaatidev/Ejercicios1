@@ -6,19 +6,27 @@ public class Exercise10 {
 
 	public static void main(String[] args) {
 
+		//Set the variables.
 		int ano;
 		int siglo;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("Ingrese año: ");
-		ano = reader.nextInt();
+			//Write down the question.
+			System.out.print("Ingrese año: ");
 		
-		siglo = ano / 100 + 1;
+			//The scanner reads the user's answer.
+			ano = reader.nextInt();
 		
-		System.out.println("Siglo: " + siglo);
+			//Calculate the variable.
+			siglo = ano / 100 + 1;
 		
-		reader.close();
+			//Show the answer.
+			System.out.println("Siglo: " + siglo);
+			
+			//Turn off/Close the scanner
+			reader.close();
 		
 	}
 
