@@ -5,32 +5,40 @@ import java.util.Scanner;
 public class Exercise07 {
 
 	public static void main(String[] args) {
+	
+		//Set the variables.
+		String name;
+		String home;
+		int tlf;
 		
-		int Strings;
-		
-			String name;
-			String home;
-			String tlf;
-		
-			Scanner reader = new Scanner(System.in);
+		//Set up the scanner.
+		Scanner reader = new Scanner(System.in);
 			
-			System.out.println("Ingrese su nombre:");
+			//Write down the question.
+			System.out.print("Ingrese su nombre:");
 			
+			//The scanner reads the user's answer.
 			name = reader.nextLine();
 			
-			System.out.println("Ingrese su dirección:");
+			//Write down the question.
+			System.out.print("Ingrese su dirección:");
 			
+			//The scanner reads the user's answer.
 			home = reader.nextLine();
 			
-			System.out.println("Ingrese su teléfono:");
+			//Write down the question.
+			System.out.print("Ingrese su teléfono:");
 			
-			tlf = reader.nextLine();
+			//The scanner reads the user's answer.
+			tlf = reader.nextInt();
 			
+			//Show the answers.
 			System.out.println("Datos ingresados:");
-			System.out.println("Nombre:" + name);
-			System.out.println("Dirección:" + home);
-			System.out.println("Teléfono:" + tlf);
+			System.out.println("Nombre: " + name);
+			System.out.println("Dirección: " + home);
+			System.out.println("Teléfono: " + tlf);
 			
+			//Turn off/Close the scanner.
 			reader.close();
 
 	}

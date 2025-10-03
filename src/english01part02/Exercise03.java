@@ -1,4 +1,4 @@
-package english;
+package english01part02;
 
 import java.util.Scanner;
 

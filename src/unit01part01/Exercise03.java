@@ -6,24 +6,33 @@ public class Exercise03 {
 
 	public static void main(String[] args) {
 		
-		//Enter the variable of the current year
+		//Set the variables.
 		int currentYear;
-		
-		//Enter the variable of the birth year
 		int birthYear;
-		
+		int age;
+	
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-			System.out.print("¿En qué año está?");
+			//Write down the question.
+			System.out.print("¿En qué año está?: ");
 			
+			//The scanner reads the user's answer.
 			currentYear = reader.nextInt();
 			
-			System.out.print("¿En qué año nació?");
+			//Write down the other question.
+			System.out.print("¿En qué año nació?: ");
 			
+			//The scanner reads the user's answer.
 			birthYear = reader.nextInt();
 			
-			System.out.print("Edad:" + (currentYear - birthYear));
+			//Calculate the variable (the answer).
+			age = currentYear - birthYear;
 			
+			//Show the answer.
+			System.out.print("Edad: " + age);
+			
+			//Turn off/Close the scanner.
 			reader.close();
 			
 	}

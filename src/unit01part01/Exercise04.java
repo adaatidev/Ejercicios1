@@ -1,34 +1,39 @@
 package unit01part01;
 
-import java.util.Locale;
-
 import java.util.Scanner;
 
 public class Exercise04 {
 
 	public static void main(String[] args) {
 
-	double nota1;
-	
-	double nota2;
-	
-	final double notaFinal;
-	
+		//Set the variables.
+		int nota1;
+		int nota2;
+		double notaFinal;
+		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
-	
-		System.out.print("Ingrese su primera nota:");
 		
-		nota1 = reader.nextDouble();
+			//Write down the question.
+			System.out.print("Ingrese su primera nota: ");
 		
-		System.out.print("Ingrese su segunda nota:");
+			//The scanner reads the user's answer.
+			nota1 = reader.nextInt();
 		
-		nota2 = reader.nextDouble();
+			//Write down the question.
+			System.out.print("Ingrese su segunda nota: ");
 		
-		notaFinal = (nota1 + nota2) / 2;
+			//The scanner reads the user's answer.
+			nota2 = reader.nextInt();
 		
-		System.out.print("Nota media:" + notaFinal);
-		
-		reader.close();
+			//Calculate the variable (the answer).
+			notaFinal = (nota1 + nota2) / 2.0;
+			
+			//Show the answer.
+			System.out.print("Nota media: " + notaFinal);
+			
+			//Turn off/Close the scanner.
+			reader.close();
 		
 	}
 

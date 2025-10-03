@@ -6,25 +6,31 @@ public class Exercise08 {
 
 	public static void main(String[] args) {
 		
-		int String;
+		//Set the variables.
 		int age;
-		
 		String name;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.println("Ingrese su nombre:");
+			//Write down the question.
+			System.out.println("Ingrese su nombre:");
 		
-		name = reader.nextLine();
+			//The scanner reads the user's answer.
+			name = reader.nextLine();
 		
-		System.out.println("Ingrese su edad:");
+			//Write down the question.
+			System.out.println("Ingrese su edad:");
+			
+			//The scanner reads the user's answer.
+			age = reader.nextInt();
 		
-		age = reader.nextInt();
+			//Show the answer.
+			System.out.println("Hola " + name + ", tienes " + age + ", ¡qué mayor eres!.");
 		
-		System.out.println("Hola " + name + ", tienes " + age + ", ¡qué mayor eres!.");
+			//Turn off/Close the scanner.
+			reader.close();
 		
-		reader.close();
-
 	}
 
 }

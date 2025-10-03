@@ -6,27 +6,41 @@ public class Exercise13 {
 
 	public static void main(String[] args) {
 		
+		//Write down the variables.
 		boolean rain;
 		boolean hw;
 		boolean lib;
 		boolean out;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("¿Está lloviendo?: ");
-		rain = reader.nextBoolean();
+			//Write down the question.
+			System.out.print("¿Está lloviendo?: ");
 		
-		System.out.print("¿Has hecho la tarea?: ");
-		hw = reader.nextBoolean();
+			//The scanner reads the user's answer.
+			rain = reader.nextBoolean();
 		
-		System.out.print("¿Tienes que ir a la biblioteca?: ");
-		lib = reader.nextBoolean();
+			//Write down the question.
+			System.out.print("¿Has hecho la tarea?: ");
 		
-		out = (!rain && hw);
+			//The scanner reads the user's answer.
+			hw = reader.nextBoolean();
 		
-		System.out.print("Sales: " + out);
+			//Write down the question.
+			System.out.print("¿Tienes que ir a la biblioteca?: ");
+			
+			//The scanner reads the user's answer.
+			lib = reader.nextBoolean();
 		
-		reader.close();
+			//Calculate the boolean.
+			out = (!rain && hw || lib);
+		
+			//Show the answer.
+			System.out.print("Sales: " + out);
+		
+			//Turn off/Close the scanner.
+			reader.close();
 
 	}
 

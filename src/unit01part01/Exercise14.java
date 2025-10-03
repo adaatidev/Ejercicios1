@@ -6,35 +6,44 @@ public class Exercise14 {
 
 	public static void main(String[] args) {
 		
+		//Set the variables.
 		int nota1;
 		int nota2;
 		int nota3;
 		int bolet;
 		double expaca;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("Ingrese nota del primer trimestre: ");
+			//Write down the question.
+			System.out.print("Ingrese nota del primer trimestre: ");
 		
-		nota1 = reader.nextInt();
+			//The scanner reads the user's answer.
+			nota1 = reader.nextInt();
 		
-		System.out.print("Ingrese nota del segundo trimestre: ");
+			//Write down the question.
+			System.out.print("Ingrese nota del segundo trimestre: ");
+			
+			//The scanner reads the user's answer.
+			nota2 = reader.nextInt();
 		
-		nota2 = reader.nextInt();
+			//Write down the question.
+			System.out.print("Ingrese nota del tercer trimestre: ");
+	
+			//The scanner reads the user's answer.
+			nota3 = reader.nextInt();
 		
-		System.out.print("Ingrese nota del tercer trimestre: ");
+			//Calculate the variables
+			bolet = (nota1 + nota2 + nota3) / 3;
+			expaca = (nota1 + nota2 + nota3) / 3.0;
 		
-		nota3 = reader.nextInt();
+			//Show the answers.
+			System.out.println("Boletín de calificaciones: " + bolet);
+			System.out.print("Expediente académico: " + expaca);
 		
-		bolet = (nota1 + nota2 + nota3) / 3;
-		
-		System.out.println("Boletín de calificaciones: " + bolet);
-		
-		expaca = (nota1 + nota2 + nota3) / 3.0;
-		
-		System.out.print("Expediente académico: " + expaca);
-		
-		reader.close();
+			//Turn off/Close the scanner.
+			reader.close();
 
 	}
 

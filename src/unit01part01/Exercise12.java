@@ -6,25 +6,36 @@ public class Exercise12 {
 
 	public static void main(String[] args) {
 
+		//Set the variables.
 		double apple;
 		double pear;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.print("Ingrese peso de manzanas: ");
+			//Write down the question.
+			System.out.print("Ingrese peso de manzanas: ");
 		
-		apple = reader.nextDouble();
+			//The scanner reads the user's answer.
+			apple = reader.nextDouble();
 		
-		System.out.print("Ingrese peso de peras: ");
+			//Write down the question.
+			System.out.print("Ingrese peso de peras: ");
 		
-		pear = reader.nextDouble();
+			//The scanner reads the user's answer.
+			pear = reader.nextDouble();
 		
-		System.out.println("Precio de las manzanas: " + apple * 2.35);
+			//Calculate the variables.
+			apple *= 2.35;
+			pear *= 1.95;
 		
-		System.out.print("Precio de las peras: " + pear * 1.95);
+			//Show the answer.
+			System.out.println("Precio de las manzanas: " + apple);
+			System.out.print("Precio de las peras: " + pear);
 		
-		reader.close();
-		
+			//Turn off/Close the scanner.
+			reader.close();
+			
 	}
 
 }

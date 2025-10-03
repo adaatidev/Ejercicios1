@@ -2,29 +2,33 @@ package unit01part01;
 
 import java.util.Scanner;
 
-import java.util.Locale;
-
 public class Exercise05 {
 
 	public static void main(String[] args) {
 		
+		//Set the variables.
 		double radio;
-		
 		final double longi;
 		final double area;
 		
-			Scanner reader = new Scanner(System.in);
+		//Set up the scanner for reading the user's keyboard.
+		Scanner reader = new Scanner(System.in);
 			
-			System.out.print("Radio de circunferencia:");
+			//Write down the question.
+			System.out.print("Radio de circunferencia: ");
 			
+			//The scanner reads the user's answer.
 			radio = reader.nextDouble();
 			
+			//Calculate the variables.
 			longi = 2 * Math.PI * radio;
 			area = Math.PI * radio * radio;
 			
-			System.out.println("Longitud de la circunferencia:" + longi);
-			System.out.print("Área de la circunferencia:" + area);
+			//Show the answers.
+			System.out.println("Longitud de la circunferencia: " + longi);
+			System.out.print("Área de la circunferencia: " + area);
 			
+			//Turn off/Close the scanner.
 			reader.close();
 		
 	}

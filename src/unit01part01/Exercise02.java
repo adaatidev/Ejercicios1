@@ -6,22 +6,26 @@ public class Exercise02 {
 
 	public static void main(String[] args) {
 		
-		//Enter the variable
+		//Set the variables (NY -> Next Year).
 		int age;
+		int ageNY;
 		
-		//Set a scanner for reading the user answer
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
-			//Write down the question
-			System.out.print("Ingrese su edad:");
+			//Write down the question.
+			System.out.print("Ingrese su edad actual: ");
 			
-			//The scanner starts reading the user's answer and it converts into age (the variable)
+			//The scanner starts reading the user's answer.
 			age = reader.nextInt();
 			
-			//Shows the answer
-			System.out.println("Su edad dentro de un año:" + (age + 1));
+			//Calculate the variable (the user's answer).
+			ageNY = age + 1;
 			
-			//Turn off the scanner
+			//Shows the answer.
+			System.out.println("Su edad dentro de un año: " + ageNY);
+			
+			//Turn off/Close the scanner.
 			reader.close();
 		
 	}

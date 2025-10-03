@@ -6,22 +6,22 @@ public class Exercise01 {
 
 	public static void main(String[] args) {
 		
-		//Enter the variable
+		//Set the variable.
 		int number;
 		
-		//Set a scanner for reading the user answer
-		Scanner reader = new Scanner(System.in);
+			//Set up the scanner for reading the user's keyboard.
+			Scanner reader = new Scanner(System.in);
 		
-			//Write down the question
-			System.out.print("Número a ingresar:");
+			//Write down the question.
+			System.out.print("Ingrese un número: ");
 			
-			//The scanner starts reading the user's answer and it converts into number (the variable)
+			//The scanner starts reading the user's answer.
 			number = reader.nextInt();
 			
-			//Shows the answer
-			System.out.println("Número ingresado:" + number);
+			//Shows the answer.
+			System.out.println("Número ingresado: " + number);
 			
-			//Turn off the scanner
+			//Turn off/Close the scanner.
 			reader.close();
 		
 	}
