@@ -6,22 +6,37 @@ public class Exercise05 {
 
 	public static void main(String[] args) {
 
+		//Set the variable for the weight.
 		double weight;
+		
+		//Set the variable for the height.
 		double height;
+		
+		//Set the variable for the BMI.
 		double bmi;
 		
+		//Set up the scanner for reading the user's keyboard.
 		Scanner reader = new Scanner(System.in);
 		
+		//Ask the weight of the user.
 		System.out.print("Enter your weight: ");
+		
+		//The scanner reads the answer.
 		weight = reader.nextDouble();
 		
+		//Ask the height of the user.
 		System.out.print("Enter your height: ");
+		
+		//The scanner reads the answer.
 		height = reader.nextDouble();
 		
+		//Calculate the BMI.
 		bmi = weight / (height * height);
 		
+		//Show the asnwer.
 		System.out.print("Your BMI is: " + bmi);
 		
+		//Close the scanner.
 		reader.close();
 		
 	}
